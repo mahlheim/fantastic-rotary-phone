@@ -20,7 +20,7 @@ Clone the repo and run the app in your browser. Alternatively, it can be used [h
 ## Usage
 Navigate to the application [here](https://mahlheim.github.io/fantastic-rotary-phone/). Enter a city in the search bar on the left hand side of the page. Today's forecast will populate in the large top card and a 5 day forecast will populate below the large card. Enter a new city to see it's weather. Each city you enter will be saved in a list below the search bar and can be clicked on if you wish to see the data for that city again.
 
-[screengrab](/assets/screengrab.png)
+![screengrab](/assets/screengrab.png)
 
 ## Credits
 Below are the list of references I used while creating this app:
