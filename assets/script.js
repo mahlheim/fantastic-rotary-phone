@@ -1,3 +1,5 @@
+const apiKey = 'c30b9be05ca6b7ab5146bc9681ac14b6';
+
 $(document).ready(function () {
 //search button feature
 $("#search-button").on("click", function () {
@@ -45,7 +47,7 @@ $("#search-button").keypress(function (event) {
 function weatherFunction(searchTerm) {
     $.ajax({
       type: "GET",
-      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=" + apiKey + "&units=imperial",
 
     }).then(function (data) {
       //if index of search value does not exist
@@ -68,14 +70,14 @@ function weatherFunction(searchTerm) {
       var cardBody = $("<div>").addClass("card-body");
       var wind = $("<p>").addClass("card-text").text("Wind: " + data.wind.speed + " MPH");
       var humid = $("<p>").addClass("card-text").text("Humidity: " + data.main.humidity + " %");
-      var temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + " K");
+      var temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + " °F");
       console.log(data)
       var lon = data.coord.lon;
       var lat = data.coord.lat;
 
       $.ajax({
         type: "GET",
-        url: "https://api.openweathermap.org/data/2.5/uvi?appid=9f112416334ce37769e5c8683b218a0d&lat=" + lat + "&lon=" + lon,
+        url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon,
 
 
       }).then(function (response) {
@@ -112,7 +114,7 @@ function weatherFunction(searchTerm) {
   function weatherForecast(searchTerm) {
     $.ajax({
       type: "GET",
-      url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d&units=imperial",
+      url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appid=" + apiKey + "&units=imperial",
 
     }).then(function (data) {
       console.log(data);
