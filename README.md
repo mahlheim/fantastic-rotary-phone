@@ -12,13 +12,13 @@
 - [Questions](#Questions)
 
 ## Description
-This app is a Weather Dashboard that runs in the browser and features a dynamically updated HTML and CSS. The app uses the [5 Day Weather Forecast]() to retrieve data for cities.
+This app is a Weather Dashboard that runs in the browser and features a dynamically updated HTML and CSS. The app uses the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrieve data for cities.
 
 ## Installation
-Clone the repo and run the app in your browser. Alternatively, it can be used [here]().
+Clone the repo and run the app in your browser. Alternatively, it can be used [here](https://mahlheim.github.io/fantastic-rotary-phone/).
 
 ## Usage
-Navigate to the application [here](). Enter a city in the search bar on the left hand side of the page. Today's forecast will populate in the large top card and a 5 day forecast will populate below the large card. Enter a new city to see it's weather. Each city you enter will be saved in a list below the search bar and can be clicked on if you wish to see the data for that city again.
+Navigate to the application [here](https://mahlheim.github.io/fantastic-rotary-phone/). Enter a city in the search bar on the left hand side of the page. Today's forecast will populate in the large top card and a 5 day forecast will populate below the large card. Enter a new city to see it's weather. Each city you enter will be saved in a list below the search bar and can be clicked on if you wish to see the data for that city again.
 
 ## Credits
 Below are the list of references I used while creating this app:
